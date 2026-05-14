@@ -1,0 +1,7 @@
+Assesment of the Various levels of optimization.
+    The lengths of the various optimiation levels are aproximatly equal. 
+    of some note optimiation level 3 is exatly the same file length as level 0 with level 1 being shorter than both of them
+    Level 1 when compared to level 0 changed many of the registers around.
+    Level 3 Interestingly has increased the length of its header to include another assembler directive 
+    levels 1 and 3 both replace almost the entire starting block with stack pushes and a short call section.
+    The impact of the optimiation seems to be negligable but it would likely be more impactfull on a higher complexity program.
