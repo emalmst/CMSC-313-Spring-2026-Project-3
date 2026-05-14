@@ -3,7 +3,7 @@
 
 int main(int argNum , char *args[]){
     if(argNum != 2){
-        printf("incorrect usage.\n proper use: ./%S <file_name>");
+        printf("incorrect usage.\n proper use: %s <file_name>", args[0]);
     }
     
 

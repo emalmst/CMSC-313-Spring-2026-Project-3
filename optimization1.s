@@ -3,7 +3,7 @@
 	.section .rdata,"dr"
 	.align 8
 .LC0:
-	.ascii "incorrect usage.\12 proper use: ./%S <file_name>\0"
+	.ascii "incorrect usage.\12 proper use: %s <file_name>\0"
 .LC1:
 	.ascii "rb\0"
 .LC2:
@@ -72,6 +72,7 @@ main:
 	popq	%r15
 	ret
 .L16:
+	movq	(%rbx), %rdx
 	leaq	.LC0(%rip), %rcx
 	call	printf
 	jmp	.L2
